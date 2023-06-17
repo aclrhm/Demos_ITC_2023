@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Quicksand:wght@400;500;600&display=swap');
+
+:root {
+    --f-header: "Poppins", sans-serif;
+    --f-para: "Quicksand", sans-serif;
+}
+
+*, 
+html, 
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.bg-dark {
+    background-color: #003974 !important;
+}
+/* Navbar */
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: #d0d0d0;
+    font-family: var(--f-para);
+}
+
+#navbar a.active {
+    color: white;
+}
+
+.navbar li a {
+    position: relative;
+}
+
+.navbar li>a::after{
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -1px;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.navbar li a:hover::after{
+    width: 100%;
+}
+
+/* Jumbotron */
+
+.c-jumbo h1 {
+    font-size: 66px;
+    font-family: var(--f-header);
+}
+
+
+
+.c-jumbo p {
+    font-family: var(--f-para);
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.c-jumbo .btn {
+    font-family: var(--f-header);
+    padding: 6px 30px;
+    border-radius: 12px;
+}
+
+#Beranda {
+    background: url(../img/Background\ Jumbotron.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* G&P */
+
+.c-guru h1 {
+    font-family: var(--f-header);
+    font-weight: 500;
+    font-size: 2.3rem;
+    position: relative;
+}
+
+.c-guru h1::after{
+    content: "";
+    position: absolute;
+    background-color: #003974;
+    height: 5px;
+    width: 20%;
+    left: 3px;
+    bottom: -10px;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.c-guru h4 {
+    font-family: var(--f-header);
+    font-weight: 600;
+}
+.c-guru img {
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+}
+
+.c-guru .text {
+    margin: auto;
+}
+
+.c-guru .text p {
+    font-family: var(--f-para);
+    font-weight: 400;
+}
+.c-guru .text h4 {
+    font-family: var(--f-header);
+    font-weight: 600;
+}
+
+.c-guru .card {
+    border: 0;
+}
+
+/* Divisi */
+
+.c-divisi h1 {
+    font-family: var(--f-header);
+    font-weight: 500;
+    font-size: 2.3rem;
+    position: relative;
+}
+
+.c-divisi h1::after {
+    content: "";
+    position: absolute;
+    background-color: #003974;
+    height: 5px;
+    width: 23%;
+    left: 3px;
+    bottom: -15px;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.card-divisi {
+    border-radius: 20px;
+}
+
+.card-divisi .d-img img {
+    width: 100px;
+    margin-right: 35px;
+}
+
+.card-divisi .d-info h4 {
+    font-family: var(--f-header);
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.card-divisi .d-info p {
+    font-family: var(--f-para);
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+/* Alasan */
+
+.c-alasan {
+    color: white;
+}
+
+.c-alasan h1,h3 {
+    font-family: var(--f-header);
+    position: relative;
+    font-weight: 500;
+}
+
+.c-alasan h1::after{
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    height: 5px;
+    width: 23%;
+    left: 3px;
+    bottom: -15px;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.c-alasan h3::after{
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    height: 5px;
+    width: 23%;
+    left: 38%;
+    bottom: -15px;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.p-alasan p {
+    font-family: var(--f-para);
+    font-weight: 400;
+    transform: translateX(5px);
+}
+
+#Alasan {
+    background: url(../img/Backgorund\ Alasan.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* Gabung */
+
+.c-gabung h1 {
+    font-family: var(--f-header);
+    font-weight: 500;
+    font-size: 3.5rem;
+}
+
+.c-gabung p {
+    font-family: var(--f-para);
+    font-weight: 400;
+    font-size: 1.34rem;
+}
+
+.c-gabung span {
+    font-family: var(--f-para);
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.c-gabung .btn {
+    font-family: var(--f-header);
+    padding: 6px 18px;
+    font-size: 1.5rem;
+    border-radius: 12px;
+    background-color: #003e81;
+
+}
+
+.c-gabung .btn:hover{
+    background-color: #003974;
+}
+
+/* Footer */
+
+.c-footer p{
+    font-family: var(--f-para);
+}
+
+.c-footer h2{
+    font-family: var(--f-header);
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+#Footer {
+    background: url(../img/Backgorund\ Alasan.png);
+    background-position: center;
+    background-size: cover;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
+    nav {
+        background-color: #003974;
+    }
+
+    .c-jumbo h1{
+        font-size: 32px;
+
+    }
+
+    #Beranda {
+        height: auto;
+    }
+
+    .c-guru h1::after{
+        width: 90%;
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 1280px){
+    nav {
+        background-color: #003974 !important;
+    }
+
+    #Beranda {
+        height: auto;
+    }
+}
