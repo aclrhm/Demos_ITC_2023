@@ -13,6 +13,10 @@ body {
     padding: 0;
 }
 
+.mr{
+    margin-right: 50px;
+}
+
 .bg-dark {
     background-color: #003974 !important;
 }
@@ -127,6 +131,20 @@ body {
 .c-guru .card {
     border: 0;
 }
+
+.carousel-control-prev {
+    margin-left: -60px;
+}
+
+.carousel-control-next {
+    margin-right: -60px;
+}
+
+.carousel .bi {
+    font-size: 2rem; 
+    color: black;
+}
+
 
 /* Divisi */
 
@@ -366,6 +384,14 @@ body {
     .c-guru h1::after{
         width: 50%;
         margin-top: 100px;
+    }
+
+    .carousel-control-prev {
+        margin-left: 0;
+    }
+
+    .carousel-control-next {
+        margin-right: 0;
     }
 
     .box .text h4 {
